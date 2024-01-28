@@ -1,18 +1,18 @@
-// index.tsx
-import React from 'react';
-import Layout from '../src/presentation/pages/index';
-import CreateUserUseCase from '../src/useCases/createUser/CreateUserUseCase';
-import UserService from '../src/services/UserService';
-import PokeUserRepository from '../src/interfaces/repositories/UserRepository';
+// pages/index.tsx
+import React, { useEffect, useState } from "react";
+import { NextPage } from "next";
+import styled from "styled-components";
+import StyledPage from "./styles/StyledPage";
 
-const Home: React.FC = () => {
-  // Suponha que você tenha instâncias reais de CreateUserUseCase e UserService
-  const userRepository = new PokeUserRepository();
-  const createUserUseCase = new CreateUserUseCase(userRepository)
-  const userService = new UserService(userRepository);
+const StyleHome = styled.div`
+  
+`;
 
+const Home: NextPage = () => {
   return (
-    <Layout createUserUseCase={createUserUseCase} userService={userService} />
+    <div>
+      <StyledPage>Home</StyledPage>
+    </div>
   );
 };
 
