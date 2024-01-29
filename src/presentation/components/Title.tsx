@@ -1,10 +1,11 @@
 // components/StyledComponent.tsx
 import styled from 'styled-components';
 
-const Header = styled.div`
+const Title = styled.div`
   background-color: ${(props) => props.theme.colors.primary};
   color: white;
-  padding: 16px;
+  margin-left: 50px;
+  margin-bottom: 10px;
 `;
 
-export default Header;
+export default Title;

@@ -1,15 +1,16 @@
 import type { AppProps } from "next/app";
 import Nav from "../src/presentation/components/Nav";
-import StyledNav from "./styles/StyledNav";
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+import '../src/styles.css';
+import Bottom from "../src/presentation/components/Bottom";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <StyledNav>
+    <ThemeProvider theme={theme}>
         <Nav />
-      </StyledNav>
-
       <Component {...pageProps} />
-    </>
+      <Bottom />
+    </ThemeProvider>
   );
 }

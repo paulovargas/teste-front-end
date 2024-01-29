@@ -17,13 +17,16 @@ const StyledSearch = styled.div`
 `;
 
 const Aside = styled.div`
+  background: black;
   color: white;
   display: flex;
   align-items: center;
   width: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 50px;
+  justify-content: center;
+  p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -57,25 +60,14 @@ const AgendaConsulta = styled.button`
   background-color: red;
 `;
 
-const Nav: NextPage = () => {
+const Bottom: NextPage = () => {
   return (
     <Aside>
-      <CentroPoke>
-        <StyledLink>
-          <Link href="/">Centro Pokemon</Link>
-        </StyledLink>
-      </CentroPoke>
-
-      <Link href="/QuemSomos">
-        <QuemSomos>
-          <p>Quem Somos</p>
-        </QuemSomos>
-      </Link>
-      <Link href="/AgendarConsulta">
-        <AgendaConsulta>Agendar Consulta</AgendaConsulta>
-      </Link>
+      <p>
+        Todas as marcas e ilustrações utilizadas são de seus respectivos donos.
+      </p>
     </Aside>
   );
 };
 
-export default Nav;
+export default Bottom;

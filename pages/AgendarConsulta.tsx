@@ -1,13 +1,14 @@
-// pages/index.tsx
-import React, { useEffect, useState } from 'react';
-import { NextPage } from 'next';
+import StyledComponent from "../src/presentation/components/Header";
 
-const AgendarConsulta: NextPage = () => {
+
+function AgendarConsulta() {
   return (
     <div>
-      <h1>Agendar Consulta</h1>
+      <StyledComponent>
+        Este é um componente estilizado usando Styled Components.
+      </StyledComponent>
     </div>
   );
-};
+}
 
 export default AgendarConsulta;

@@ -1,14 +1,25 @@
-// pages/index.tsx
-import React, { useEffect, useState } from 'react';
-import { NextPage } from 'next';
-import { useRouter } from 'next/router'
+import Description from "../src/presentation/components/Description";
+import StyledComponent from "../src/presentation/components/Header";
+import Rota from "../src/presentation/components/Rota";
+import Title from "../src/presentation/components/Title";
 
-const QuemSomos: NextPage = () => {
+
+function QuemSomos() {
   return (
     <div>
-      <h1>Quem Somos</h1>
+      <StyledComponent>
+        <Rota>
+          Home {">"} Quem Somos
+        </Rota>
+        <Title>
+          <h1>Quem Somos</h1>
+        </Title>
+        <Description>
+          A maior rede de tratamento pokêmon.
+        </Description>
+      </StyledComponent>
     </div>
   );
-};
+}
 
 export default QuemSomos;
