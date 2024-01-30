@@ -29,9 +29,11 @@ const Aside = styled.div`
 const StyledLink = styled.a`
   text-decoration: none;
   color: white;
+  margin-left: 15px;
+  margin-right: 15px;
 `;
 
-const CentroPoke = styled.button`
+const CentroPoke = styled.div`
   display: flex;
   align-items: center;
   border: none;
@@ -47,10 +49,9 @@ const QuemSomos = styled.div`
   width: auto;
 `;
 
-const AgendaConsulta = styled.button`
+const AgendaConsulta = styled.div`
   display: flex;
   align-items: center;
-  border: none;
   width: auto;
   height: 40px;
   border-radius: 25px;
@@ -71,9 +72,12 @@ const Nav: NextPage = () => {
           <p>Quem Somos</p>
         </QuemSomos>
       </Link>
-      <Link href="/AgendarConsulta">
-        <AgendaConsulta>Agendar Consulta</AgendaConsulta>
-      </Link>
+
+      <AgendaConsulta>
+        <Link href="/AgendarConsulta">
+          <StyledLink>Agendar Consulta</StyledLink>
+        </Link>
+      </AgendaConsulta>
     </Aside>
   );
 };

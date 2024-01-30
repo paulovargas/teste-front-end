@@ -4,19 +4,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import styled from "styled-components";
 
-const StyledSearch = styled.div`
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  width: auto;
-  height: 40px;
-  input:focus-visible {
-    border-color: transparent !important;
-    box-shadow: none;
-  }
-`;
-
-const Aside = styled.div`
+const StuledBottom = styled.div`
   background: black;
   color: white;
   display: flex;
@@ -29,44 +17,13 @@ const Aside = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: white;
-`;
-
-const CentroPoke = styled.button`
-  display: flex;
-  align-items: center;
-  border: none;
-  width: auto;
-  height: 40px;
-  border-radius: 25px;
-  background-color: red;
-  color: white;
-  text-decoration: underline;
-`;
-
-const QuemSomos = styled.div`
-  width: auto;
-`;
-
-const AgendaConsulta = styled.button`
-  display: flex;
-  align-items: center;
-  border: none;
-  width: auto;
-  height: 40px;
-  border-radius: 25px;
-  background-color: red;
-`;
-
 const Bottom: NextPage = () => {
   return (
-    <Aside>
+    <StuledBottom>
       <p>
         Todas as marcas e ilustrações utilizadas são de seus respectivos donos.
       </p>
-    </Aside>
+    </StuledBottom>
   );
 };
 

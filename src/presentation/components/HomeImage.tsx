@@ -1,6 +1,5 @@
 // components/StyledComponent.tsx
 import styled from 'styled-components';
-import '../../assets/img/pokemon.png'
 
 const HomeImage = styled.div`
 background-image: url('/images/pokemon-hero.jpg'); /* Substitua pelo caminho real da sua imagem */
