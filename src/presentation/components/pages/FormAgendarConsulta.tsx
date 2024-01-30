@@ -32,29 +32,39 @@ const FormAgendarConsulta: NextPage = () => {
         <h1>Preencha o formulário abaixo para agendar sua consulta</h1>
       </FormTitle>
       <FormContainer>
-        <Label>Nome</Label>
-        <Input>
-          <input defaultValue="Digite o seu nome" {...register("example")} />
-          <input {...register("exampleRequired", { required: true })} />
-        </Input>
-        <Label>Sobrenome</Label>
-        <Input>
-          <input defaultValue="Digite o seu nome" {...register("example")} />
-          <input {...register("exampleRequired", { required: true })} />
-          <FormBottom>
-            <input type="submit" />
-          </FormBottom>
-        </Input>
-
-        {/* <Form onSubmit={handleSubmit(onSubmit)}>
+        <div>
           <Label>Nome</Label>
           <Input>
             <input defaultValue="Digite o seu nome" {...register("example")} />
             <input {...register("exampleRequired", { required: true })} />
-            <input type="submit" />
           </Input>
-          {/* errors will return when field validation fails  
-        </Form> */}
+        </div>
+        <div>
+          <Label>Sobrenome</Label>
+          <Input>
+            <input defaultValue="Digite o seu nome" {...register("example")} />
+            <input {...register("exampleRequired", { required: true })} />            
+          </Input>
+        </div>
+      </FormContainer>
+      <FormContainer>
+        <div>
+          <Label>Região</Label>
+          <Input>
+            <input defaultValue="Digite o seu nome" {...register("example")} />
+            <input {...register("exampleRequired", { required: true })} />
+          </Input>
+        </div>
+        <div>
+          <Label>Cidade</Label>
+          <Input>
+            <input defaultValue="Digite o seu nome" {...register("example")} />
+            <input {...register("exampleRequired", { required: true })} />
+            <FormBottom>
+              <input type="submit" />
+            </FormBottom>
+          </Input>
+        </div>
       </FormContainer>
     </div>
   );
